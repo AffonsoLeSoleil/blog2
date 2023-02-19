@@ -13,7 +13,7 @@ import forms
 from forms import CreatePostForm
 from flask_gravatar import Gravatar
 
-load_dotenv('.env')
+load_dotenv('env/.env')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
