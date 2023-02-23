@@ -162,7 +162,6 @@ def contact():
 
 
 @app.route("/new-post", methods=["GET", "POST"])
-@admin_required
 def add_new_post():
     form = CreatePostForm()
     if form.validate_on_submit():
